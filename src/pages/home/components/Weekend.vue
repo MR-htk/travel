@@ -3,7 +3,7 @@
     <div class="title">周末去哪儿</div>
     <ul>
       <li class="item border-bottom"
-          v-for="item of weekendList"
+          v-for="item of list"
           :key="item.id">
         <div class="item-img-wrapper">
           <img class="img-item"
@@ -21,24 +21,11 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      weekendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-        title: '成都必打卡',
-        desc: '成都的标志，也是现代人对老成都的记忆'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-        title: '成都必打卡',
-        desc: '成都的标志，也是现代人对老成都的记忆'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a2/78e4dbcfd45a6d.jpg_r_640x214_7a62b06a.jpg',
-        title: '成都必打卡',
-        desc: '成都的标志，也是现代人对老成都的记忆'
-      }]
     }
   }
 }
@@ -53,7 +40,7 @@ export default {
 .item-img-wrapper
   overflow hidden
   height 0
-  padding-bottom 33.9%
+  padding-bottom 37.09%
   .img-item
     width 100%
 .item-info

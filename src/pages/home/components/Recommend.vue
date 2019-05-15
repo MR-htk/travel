@@ -3,7 +3,7 @@
     <div class="title">热销推荐</div>
     <ul>
       <li class="item border-bottom"
-          v-for="item of recommentList"
+          v-for="item of list"
           :key="item.id">
         <img class="img-item"
              :src="item.imgUrl" />
@@ -20,29 +20,11 @@
 <script>
 export default {
   name: 'HomeRemmend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommentList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }]
     }
   }
 }
