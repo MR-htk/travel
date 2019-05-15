@@ -42,21 +42,6 @@ export default {
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
         title: '成都海昌极地海洋公园',
         desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0005',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0006',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
-      }, {
-        id: '0007',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_200x200_63285bd9.jpg',
-        title: '成都海昌极地海洋公园',
-        desc: '【提前1天预订】成都海昌极地海洋公园一期二期+冰雪乐园套票'
       }]
     }
   }
