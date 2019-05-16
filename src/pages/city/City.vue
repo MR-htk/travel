@@ -1,7 +1,7 @@
 <template>
   <div>
     <CityHeader></CityHeader>
-    <CitySearch></CitySearch>
+    <CitySearch :cities="cities"></CitySearch>
     <CityList :cities="cities"
               :hotCities="hotCities"></CityList>
     <CityAlphabet :cities="cities"></CityAlphabet>
@@ -18,7 +18,7 @@ export default {
   name: 'City',
   data () {
     return {
-      cicties: {},
+      cities: {},
       hotCities: []
     }
   },
