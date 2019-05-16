@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     handleCityClick (city) {
-      alert(city)
+      this.$store.dispatch('changeCity', city)
     }
   },
   mounted () {
