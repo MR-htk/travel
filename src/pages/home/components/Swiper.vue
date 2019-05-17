@@ -4,7 +4,7 @@
             v-if="showSwipper">
       <swiper-slide v-for="item of list"
                     :key="item.id">
-        <img class="swiper-ima"
+        <img class="swiper-img"
              :src="item.imgUrl" />
       </swiper-slide>
       <div class="swiper-pagination"
@@ -45,6 +45,6 @@ export default {
   height 0
   padding-bottom 29.67%
   background #eeeeee
-  .swiper-ima
+  .swiper-img
     width 100%
 </style>

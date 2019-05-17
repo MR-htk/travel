@@ -1,21 +1,42 @@
 <template>
-  <div class="banner">
-    <img class="banner-img"
-         src="//img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_600x330_3b0fdac5.jpg" />
-    <div class="banner-info">
-      <div class="banner-tittle">成都海昌极地海洋公园</div>
-      <div class="banner-number"><span class="iconfont banner-icon">&#xe604;</span> 54</div>
+  <div>
+    <div class="banner"
+         @click="handleBannerClick">
+      <img class="banner-img"
+           src="//img1.qunarzz.com/sight/p0/1612/1d/1d9a740c1f9e0efaa3.img.jpg_600x330_3b0fdac5.jpg" />
+      <div class="banner-info">
+        <div class="banner-tittle">成都海昌极地海洋公园</div>
+        <div class="banner-number"><span class="iconfont banner-icon">&#xe604;</span> 54</div>
+      </div>
     </div>
+    <CommonGallary :imgs="imgs"
+                   v-show="showGallary"
+                   @close="handleGalleryClose"></CommonGallary>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  components: {
+    CommonGallary
+  },
   data () {
     return {
-
+      showGallary: false,
+      imgs: ['http://img1.qunarzz.com/sight/p0/1904/34/3400fe6160c9fec4a3.img.jpg_r_800x800_39ef47af.jpg',
+        'http://img1.qunarzz.com/sight/p0/1904/e8/e86961745a499afca3.img.jpg_r_800x800_7dc65561.jpg']
     }
+  },
+  methods: {
+    handleBannerClick () {
+      this.showGallary = true
+    },
+    handleGalleryClose () {
+      this.showGallary = false
+    }
+
   }
 }
 </script>
