@@ -12,12 +12,17 @@
 
 <script>
 import axios from 'axios'
-import CityHeader from './components/Header'
 import CitySearch from './components/Search'
 import CityList from './components/List'
 import CityAlphabet from './components/Alphabet'
 export default {
   name: 'City',
+  components: {
+    CityHeader: () => import('./components/Header'),
+    CitySearch,
+    CityList,
+    CityAlphabet
+  },
   data () {
     return {
       cities: {},
@@ -43,9 +48,6 @@ export default {
   },
   mounted () {
     this.getCityInfo()
-  },
-  components: {
-    CityHeader, CitySearch, CityList, CityAlphabet
   }
 }
 </script>
